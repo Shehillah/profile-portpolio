@@ -202,3 +202,15 @@ border-radius: 5px;
     cursor: pointer;
     letter-spacing: 2px;
 }
+.item{
+    position: relative;
+}
+.item span{
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}

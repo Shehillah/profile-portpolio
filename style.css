@@ -190,3 +190,15 @@ border-radius: 5px;
     color: white;
     transition: 0.5s;
 }
+
+/* portfolio */
+
+.control ul li {
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}

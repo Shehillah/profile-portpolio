@@ -214,8 +214,9 @@ border-radius: 5px;
     cursor: pointer;
     opacity: 0;
 }
-.item :hover span{
-   
+.item:hover span{
+    /* opacity: 1;
+    transition: 0.5s; */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -231,7 +232,7 @@ border-radius: 5px;
     opacity: 0;
     position: absolute;
 }
-.item :hover:before{
+.item:hover:before{
     opacity: 1;
     transition: 0.3s;
 }

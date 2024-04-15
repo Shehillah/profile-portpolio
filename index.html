@@ -192,10 +192,10 @@
           <h1 class="text-center-pb-5">What we offer</h1>
           <div class="control">
             <ul>
-              <li class="button">All</li>
-              <li class="button">Brand</li>
-              <li class="button">Design</li>
-              <li class="button">Graphic</li>
+              <li class="button" data-filter="filter">All</li>
+              <li class="button" data-filter="Brand">Brand</li>
+              <li class="button" data-filter="Design">Design</li>
+              <li class="button" data-filter="Graphic">Graphic</li>
             </ul>
           </div>
           <div class="row pt-3">
@@ -265,6 +265,27 @@
           </div>
         </div>
       </div>
+
+
+      <script>
+        $(document).ready(function(){
+          $(".button").click(function(){
+            var value=$(this).attr("data-filter");
+            if(value =="all"){
+              $(".filter").show("100");
+            }
+            else{
+              $(".filter").not("."+value).hide("1000");
+              $(".filter").not("."+value).show("1000");
+            }
+            $("ul.button").click(function(){
+              $( this).addClass('active').siblings().removeClass('active');
+            })
+          })
+        })
+
+      </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

@@ -207,8 +207,8 @@ border-radius: 5px;
 }
 .item span{
     position: absolute;
-    top: 40px;
-    left: 45px;
+    top: 100px;
+    left: 150px;
     font-size: 40px;
     color: black;
     cursor: pointer;
@@ -234,5 +234,5 @@ border-radius: 5px;
 }
 .item:hover span{
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.5s;
 }
